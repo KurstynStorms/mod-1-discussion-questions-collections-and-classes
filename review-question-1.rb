@@ -1,4 +1,5 @@
 ## QUESTION 1
+require "pry"
 
 pokemon = [
   {
@@ -60,6 +61,12 @@ pokemon = [
 }
 ]
 
+def foundpokemon(pokemon)
+    find = pokemon.any? {|hash| hash[:weight] > 60 ? true : false}
+    puts find
+end
+
+foundpokemon(pokemon)
 
 # How would you get the url for Bulbasaur's ability?
 # How would you return the first pokemon with base experience over 40?
